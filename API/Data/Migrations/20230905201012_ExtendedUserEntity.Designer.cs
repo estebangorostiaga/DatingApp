@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230905002817_ExtendedUserEntity")]
+    [Migration("20230905201012_ExtendedUserEntity")]
     partial class ExtendedUserEntity
     {
         /// <inheritdoc />
@@ -25,6 +25,9 @@ namespace API.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("City")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Country")
                         .HasColumnType("TEXT");
@@ -47,7 +50,7 @@ namespace API.Data.Migrations
                     b.Property<string>("KnownAs")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("LastActvie")
+                    b.Property<DateTime>("LastActive")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LookingFor")
