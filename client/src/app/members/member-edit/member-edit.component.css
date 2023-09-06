@@ -5,8 +5,7 @@
 }
 
 .card-body {
-    padding: 0 25px;
-    
+    padding: 0 25px; 
 }
 
 .card-footer {
@@ -14,5 +13,3 @@
     background-color: white;
     border-top: none;
 }
-
-.ngx-gallery { display: inline-block; margin-bottom: 20px;}
